@@ -1,0 +1,14 @@
+{
+  "name": "first-phase",
+  "version": "1.0.0",
+  "description": "First Phase Node.js module assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rohit Pakhre",
+  "license": "ISC",
+  "type": "module"
+}

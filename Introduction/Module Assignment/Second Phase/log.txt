@@ -1,0 +1,67 @@
+--- Second Phase: Combined App ---
+Logger initialized. Logs will be written to: C:\Users\acer\OneDrive\Desktop\Node-Js\Introduction\Module Assignment\Second Phase\log.txt
+
+[1] Name Module
+Name: Rohit Pakhre
+
+[2] Add Module
+addTwo(3,4) = 7
+
+[3] Math Module
+add(10,5)= 15
+subtract(10,5)= 5
+multiply(10,5)= 50
+divide(10,5)= 2
+
+[4] File Writer/Reader
+Data written to C:\Users\acer\OneDrive\Desktop\Node-Js\Introduction\Module Assignment\Second Phase\data.txt
+Read from file: This is sample data written on 2025-11-09T13:05:24.600Z
+
+[5] Word Count Module
+Word count of read text: 7
+
+[6] Date Utilities
+Today: 2025-11-09
+Now: 2025-11-09T13:05:24.611Z
+
+[7] Random Number Module
+Random between 1 and 100: 49
+
+Second phase combined app complete.
+--- Second Phase: Combined App ---
+Logger initialized. Logs will be written to: C:\Users\acer\OneDrive\Desktop\Node-Js\Introduction\Module Assignment\Second Phase\log.txt
+
+[1] Name Module
+Name: Rohit Pakhre
+
+[2] Add Module
+addTwo(3,4) = 7
+
+[3] Math Module
+add(10,5)= 15
+subtract(10,5)= 5
+multiply(10,5)= 50
+divide(10,5)= 2
+
+[4] File Writer/Reader
+Data file already exists at C:\Users\acer\OneDrive\Desktop\Node-Js\Introduction\Module Assignment\Second Phase\data.txt
+Read from file: This is sample data written on 2025-11-09T13:05:24.600Z
+
+[5] Logger Module
+Log file path: C:\Users\acer\OneDrive\Desktop\Node-Js\Introduction\Module Assignment\Second Phase\log.txt
+This message will be saved to the log file.
+
+[6] Word Count Module
+Word count of read text: 7
+
+[7] Date Utilities
+Today: 2025-11-09
+Now: 2025-11-09T13:13:04.341Z
+
+[8] Random Number Module
+Random between 1 and 100: 30
+
+[9] File Exists Module
+Does data file exist? true
+
+Second phase combined app complete.
