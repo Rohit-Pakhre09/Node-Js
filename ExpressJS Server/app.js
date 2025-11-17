@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 const logsDir = path.join(__dirname, "logs");
 
 if (!fs.existsSync(logsDir)) {
-    fs.mkdir(logsDir)
+    fs.mkdirSync(logsDir)
 }
 
 const accessLogStream = fs.createWriteStream(
