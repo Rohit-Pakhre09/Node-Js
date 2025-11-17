@@ -5,9 +5,10 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![pnpm](https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=white)](https://pnpm.io/)
 
-A sleek, professional **full-stack Todo App** built with **React**, **Redux Toolkit**, **Express.js**, and **Tailwind CSS**, implemented with full **CRUD** (Create, Read, Update, Delete) functionality, **server-side persistence**, and a **Light / Dark theme toggle**. The project uses `npm` for frontend and `pnpm` for backend development and build tasks.
+A sleek, professional **full-stack Todo App** built with **React**, **Redux Toolkit**, **Express.js**, and **Tailwind CSS**, implemented with full **CRUD** (Create, Read, Update, Delete) functionality, **server-side persistence**, and a **Light / Dark theme toggle**. The project uses `pnpm` for both frontend and backend development and build tasks.
 
 ## 📝 About
 
@@ -17,14 +18,14 @@ This project serves as a comprehensive example of a full-stack web application, 
 
 ## 📸 Todo UI
 
-![Todo App Screenshot](../Todo%20App/Frontend/src/assets/1.png) <br><br>
-![Todo App Screenshot](../Todo%20App/Frontend/src/assets/2.png)
+![Todo App Screenshot](./Frontend/src/assets/1.png) <br><br>
+![Todo App Screenshot](./Frontend/src/assets/2.png)
 
 ---
 
 ## 📸 Todo UI Video
 
-![Todo App Screenshot](../Todo%20App/Frontend/src/assets/Redux%20-%20Todo%20App.gif)
+<img src="./Frontend/src/assets/Redux%20-%20Todo%20App.gif" width="100%" alt="Todo App Video">
 
 ---
 
@@ -99,11 +100,11 @@ cd Backend
 pnpm install
 ```
 
-#### Frontend (using npm)
+#### Frontend (using pnpm)
 
 ```bash
 cd ../Frontend
-npm install
+pnpm install
 ```
 
 ### 3. Run (development)
@@ -119,7 +120,7 @@ pnpm dev
 
 ```bash
 cd Frontend
-npm run dev
+pnpm dev
 ```
 
 ### 4. Build (production)
@@ -128,8 +129,8 @@ npm run dev
 
 ```bash
 cd Frontend
-npm run build
-npm run preview
+pnpm build
+pnpm preview
 ```
 
 ## 📦 Tech Stack
@@ -143,7 +144,7 @@ npm run preview
 | [Vite](https://vitejs.dev/)                    | Fast development server and build tool |
 | [Express.js](https://expressjs.com/)           | Backend web framework                  |
 | [CORS](https://www.npmjs.com/package/cors)     | Enable cross-origin requests           |
-| [npm](https://www.npmjs.com/)                  | Frontend package manager               |
+| [pnpm](https://pnpm.io/)                       | Frontend package manager               |
 | [pnpm](https://pnpm.io/)                       | Backend package manager                |
 
 ## 🔌 API Endpoints
