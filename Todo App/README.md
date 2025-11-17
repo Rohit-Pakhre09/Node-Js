@@ -17,14 +17,14 @@ This project serves as a comprehensive example of a full-stack web application, 
 
 ## 📸 Todo UI
 
-![Todo App Screenshot](./src/assets/1.png) <br><br>
-![Todo App Screenshot](./src/assets/2.png)
+![Todo App Screenshot](../Todo%20App/Frontend/src/assets/1.png) <br><br>
+![Todo App Screenshot](../Todo%20App/Frontend/src/assets/2.png)
 
 ---
 
 ## 📸 Todo UI Video
 
-![Todo App Screenshot](./src/assets/Redux%20-%20Todo%20App.gif)
+![Todo App Screenshot](../Todo%20App/Frontend/src/assets/Redux%20-%20Todo%20App.gif)
 
 ---
 
