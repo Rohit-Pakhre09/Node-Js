@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1763968914763,
+        "username": "Rohit",
+        "tweet": "Coding with DSA",
+        "isEdited": true,
+        "createdAt": "2025-11-24T07:21:54.763Z",
+        "updatedAt": "2025-11-24T10:57:13.055Z"
+    },
+    {
+        "id": 1763968967350,
+        "username": "Zayn",
+        "tweet": "Coding YT Clone",
+        "isEdited": true,
+        "createdAt": "2025-11-24T07:22:47.350Z",
+        "updatedAt": "2025-11-24T11:11:10.487Z"
+    },
+    {
+        "id": 1763981885969,
+        "username": "John Doe",
+        "tweet": "Buying Mac OS",
+        "isEdited": false,
+        "createdAt": "2025-11-24T10:58:05.969Z"
+    },
+    {
+        "id": 1763981909346,
+        "username": "David Morris",
+        "tweet": "Playing God of War",
+        "isEdited": false,
+        "createdAt": "2025-11-24T10:58:29.346Z"
+    },
+    {
+        "id": 1763990352662,
+        "username": "Rohan",
+        "tweet": "Working on live project",
+        "isEdited": false,
+        "createdAt": "2025-11-24T13:19:12.662Z"
+    },
+    {
+        "id": 1763990378525,
+        "username": "Arjun Reddy",
+        "tweet": "Playing Volley Ball with friends",
+        "isEdited": true,
+        "createdAt": "2025-11-24T13:19:38.525Z",
+        "updatedAt": "2025-11-24T13:46:43.098Z"
+    }
+]
