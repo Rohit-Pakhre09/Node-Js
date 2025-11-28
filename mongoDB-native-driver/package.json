@@ -1,0 +1,17 @@
+{
+  "name": "mongodb-native-driver",
+  "version": "1.0.0",
+  "description": "This the demo of integration of the MongoDB with Native Driver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mongodb", "express"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0"
+  }
+}
