@@ -6,11 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["mongodb", "express"],
-  "author": "",
+  "keywords": [
+    "mongodb",
+    "express"
+  ],
+  "author": "Rohit Pakhre",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongodb": "^7.0.0"
   }
