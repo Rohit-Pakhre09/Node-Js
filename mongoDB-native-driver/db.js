@@ -4,19 +4,14 @@ import "dotenv/config";
 const MONGODB_URI = process.env.MONGODB_URI;
 const client = new MongoClient(MONGODB_URI);
 
-let collectionArr;
-
 // Database connection
-const connectDB = async () => {
-    if (collectionArr) return collectionArr;
-
+export const connectDB = async () => {
     await client.connect();
-    console.log("Database connected");
-
+    
     const db = client.db("employeesDB");
-    collectionArr = db.collection("employees");
+    const collection = db.collection("employees");
 
-    return collectionArr;
+    return collection;
 }
 
 // Create one data: CREATE
@@ -55,11 +50,11 @@ export const showAllEmployees = async () => {
     }
 };
 
-// Ge Data by ID: READ
+// Get Data by ID: READ
 export const showEmployeeDataByID = async (id, res) => {
     try {
         const collection = await connectDB();
-        const result = collection.findOne({ emp_id: id });
+        const result = await collection.findOne({ emp_id: id });
         return result
     } catch (error) {
         console.log("Error: ", error.message);
@@ -71,7 +66,7 @@ export const showEmployeeDataByID = async (id, res) => {
 export const updateEmployeeData = async (id, data) => {
     try {
         const collection = await connectDB();
-        const result = collection.updateOne({ emp_id: id }, { $set: data });
+        const result = await collection.updateOne({ emp_id: id }, { $set: data });
         return result
     } catch (error) {
         console.log("Error: ", error.message);
@@ -88,5 +83,33 @@ export const deleteEmployeeData = async (id) => {
     } catch (error) {
         console.log("Error:", error.message);
         throw new Error("There is server error!");
+    }
+};
+
+// Search Route
+export const globalSearch = async (query) => {
+    try {
+        const collection = await connectDB();
+        const regex = new RegExp(query, "i");
+
+        const result = await collection.find({
+            $or: [
+                { emp_id: regex },
+                { fullName: regex },
+                { email: regex },
+                { phone: regex },
+                { age: regex },
+                { gender: regex },
+                { department: regex },
+                { role: regex },
+                { salary: regex },
+                { joiningDate: regex },
+                { status: regex }
+            ]
+        }).toArray();
+
+        return result;
+    } catch (error) {
+        throw new Error("Error in global search");
     }
 };
