@@ -4,6 +4,8 @@
   "description": "This the demo of integration of the MongoDB with Native Driver",
   "main": "index.js",
   "scripts": {
+    "start": "node --watch server.js",
+    "dev": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
