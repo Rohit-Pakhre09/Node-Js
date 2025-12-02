@@ -8,6 +8,9 @@
 
 A RESTful API for managing a book store, built with Node.js, Express.js, and MongoDB. This backend application provides full CRUD operations for books, including logging and environment-based configuration. It supports JSON request/response formats and uses middleware for request logging and JSON parsing.
 
+## API Showcase
+![API Video](/assets/Book%20Store%20API.gif)
+
 ## Tech Stack
 
 - **Backend**: Node.js, Express.js
