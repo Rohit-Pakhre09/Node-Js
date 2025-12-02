@@ -1,8 +1,10 @@
 # Book Store API
 
-![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
-![Express.js](https://img.shields.io/badge/Express.js-4.x-blue)
-![Morgan](https://img.shields.io/badge/Morgan-1.x-yellow)
+![Node.js](https://img.shields.io/badge/Node.js-18.x-339933?style=plastic&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-4.x-000000?style=plastic&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4.x-47A248?style=plastic&logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose-9.x-880000?style=plastic&logo=mongoose&logoColor=white)
+![Morgan](https://img.shields.io/badge/Morgan-1.x-FF6B35?style=plastic&logo=morgan&logoColor=white)
 
 A RESTful API for managing a book store, built with Node.js, Express.js, and MongoDB. This backend application provides full CRUD operations for books, including logging and environment-based configuration. It supports JSON request/response formats and uses middleware for request logging and JSON parsing.
 
@@ -34,12 +36,14 @@ A RESTful API for managing a book store, built with Node.js, Express.js, and Mon
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd book-store
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
@@ -57,17 +61,18 @@ Once the server is running, you can interact with the API using tools like Postm
 
 ## API Endpoints
 
-| Method | Endpoint     | Description              |
-|--------|--------------|--------------------------|
-| POST   | `/`          | Add a new book          |
-| GET    | `/`          | Get all books           |
-| GET    | `/:id`       | Get a book by ID        |
-| PATCH  | `/:id`       | Update a book by ID     |
-| DELETE | `/:id`       | Delete a book by ID     |
+| Method | Endpoint | Description         |
+| ------ | -------- | ------------------- |
+| POST   | `/`      | Add a new book      |
+| GET    | `/`      | Get all books       |
+| GET    | `/:id`   | Get a book by ID    |
+| PATCH  | `/:id`   | Update a book by ID |
+| DELETE | `/:id`   | Delete a book by ID |
 
 ### Example Request
 
 **Add a Book (POST /)**:
+
 ```bash
 {
   "bookId": "B101",
@@ -83,6 +88,7 @@ Once the server is running, you can interact with the API using tools like Postm
 ```
 
 **Response**:
+
 ```bash
 {
   {
@@ -150,6 +156,7 @@ The application uses the following environment variables:
 ## Error Handling
 
 The API includes comprehensive error handling for:
+
 - Invalid request data
 - Database connection issues
 - Non-existent resources
