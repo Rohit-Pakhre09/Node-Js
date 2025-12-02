@@ -5,7 +5,7 @@ export const getAllData = async (req, res) => {
         const result = await Books.find();
         res.status(200).json(result);
     } catch (error) {
-        console.log("Error in the getAllDataController", error.message);
+        console.log("Error in the getAllBookController", error.message);
         res.status(500).json({ error });
     }
 };

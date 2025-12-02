@@ -7,7 +7,7 @@ export const deleteData = async (req, res) => {
         const result = await Books.deleteOne({ bookId: id });
         res.status(200).json(result);
     } catch (error) {
-        console.log("Error in the updateDataController", error.message);
+        console.log("Error in the updateBookController", error.message);
         res.status(500).json({ error });
     }
 };

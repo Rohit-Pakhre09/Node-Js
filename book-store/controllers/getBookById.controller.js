@@ -9,7 +9,7 @@ export const getDataById = async (req, res) => {
         const result = await Books.findOne({ bookId: id });
         res.status(200).json(result);
     } catch (error) {
-        console.log("Error in the getIdByController", error.message);
+        console.log("Error in the getBookIdByController", error.message);
         res.status(500).json({ error });
     }
 }
