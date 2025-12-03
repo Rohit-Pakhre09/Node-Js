@@ -93,6 +93,6 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+## 👨‍💻 Author:-
 
 [Rohit Pakhre](https://github.com/your-username)
