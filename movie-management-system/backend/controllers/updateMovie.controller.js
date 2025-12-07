@@ -25,7 +25,7 @@ export const updateMovie = async (req, res) => {
             return res.status(400).json({ error: "Id is not provided!" });
         }
 
-        const movie = await Movie.findOne({ mId: id });
+        const movie = await Movie.findById(id);
         if (!movie) {
             return res.status(404).json({ error: "No movie found!" });
         }
@@ -46,7 +46,6 @@ export const updateMovie = async (req, res) => {
         if (languageArr) data.languages = languageArr;
         if (castArr) data.cast = castArr;
 
-        // allow false as well
         if (typeof isPublished !== "undefined") {
             data.isPublished = isPublished === "true" || isPublished === true;
         }
@@ -65,11 +64,10 @@ export const updateMovie = async (req, res) => {
                 }
             }
 
-            // correct uploads path
             data.moviePoster = `/uploads/${file.filename}`;
         }
 
-        const result = await Movie.updateOne({ mId: id }, { $set: data });
+        const result = await Movie.updateOne({ _id: movie._id }, { $set: data });
         return res.status(200).json(result);
     } catch (error) {
         console.error("Error in updateMovie controller:", error);

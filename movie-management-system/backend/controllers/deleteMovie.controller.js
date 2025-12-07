@@ -7,29 +7,29 @@ export const deleteMovie = async (req, res) => {
         const { id } = req.params;
 
         if (!id) {
-            res.status(404).json({ error: "Id is not provided!" });
+            return res.status(400).json({ error: "Id is not provided!" });
         }
 
-        const movie = await Movie.findOne({ mId: id });
+        const movie = await Movie.findById(id);
         if (!movie) {
-            res.status(404).json({ error: "No Movie Found!" });
+            return res.status(404).json({ error: "No Movie Found!" });
         }
 
         if (movie.moviePoster) {
             const relativePath = movie.moviePoster.replace(/^\//, "");
-            const aboslutePath = path.join(process.cwd(), relativePath);
+            const absolutePath = path.join(process.cwd(), relativePath);
 
             try {
-                await fs.unlink(aboslutePath);
+                await fs.unlink(absolutePath);
             } catch (error) {
                 console.warn("Could not delete old image:", error.message);
             }
         }
 
-        const result = await Movie.deleteOne({ mId: id });
-        res.status(200).json(result);
+        await Movie.findByIdAndDelete(id);
+        return res.status(200).json({ message: "Movie deleted successfully" });
     } catch (error) {
-        console.error("Error in getMovies controller:", error);
-        res.status(500).json({ error: "Internal server error", details: error.message });
+        console.error("Error in deleteMovie controller:", error);
+        return res.status(500).json({ error: "Internal server error", details: error.message });
     }
 };
