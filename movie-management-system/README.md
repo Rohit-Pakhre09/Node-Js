@@ -149,7 +149,9 @@ This project is licensed under the ISC License. See the [LICENSE](LICENSE) file 
 
 ## 👨‍💻 Author
 
-**Rohit Pakhre** - [Github Profile](https://github.com/Rohit-Pakhre09) 📧
+**Rohit Pakhre** : 
+[Github Profile](https://github.com/Rohit-Pakhre09) • 
+[LinkedIN Profile](https://www.linkedin.com/in/rohit-pakhre/) 
 
 ## 🙏 Acknowledgments
 
