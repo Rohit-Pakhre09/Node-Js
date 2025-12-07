@@ -81,12 +81,6 @@ const movieSchema = new mongoose.Schema(
         moviePoster: {
             type: String,
             trim: true,
-            validate: {
-                validator: function (value) {
-                    return /^https?:\/\/.+\.(jpg|jpeg|png|webp)$/.test(value);
-                },
-                message: "Invalid poster URL format",
-            },
         },
 
         isPublished: {
