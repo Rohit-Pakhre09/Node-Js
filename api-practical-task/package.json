@@ -1,0 +1,22 @@
+{
+  "name": "api-practical-task",
+  "version": "1.0.0",
+  "description": "RestFul API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "mongoose"
+  ],
+  "author": "Rohit Pakhre",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.1"
+  }
+}
