@@ -1,7 +1,7 @@
 import express from "express";
-import { router } from "./router/routes.js";
+import { router } from "./src/routes/routes.js";
 import cookieParser from "cookie-parser";
-import { errorHandler } from "./middleware/error.middleware.js";
+import { errorHandler } from "./src/middleware/error.middleware.js";
 import cors from "cors";
 import helmet from "helmet";
 
