@@ -27,7 +27,7 @@ A robust and scalable RESTful API for a blogging platform. This backend service 
 - **Security**: Protected routes, CORS configuration, and password hashing.
 - **Scalability**: Modular code structure with separate controllers, routes, and middlewares.
 
-## � Tech Stack
+## ⚙️ Tech Stack
 
 - **Runtime Environment**: Node.js
 - **Web Framework**: Express.js
