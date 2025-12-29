@@ -1,7 +1,11 @@
 import mongoose from "mongoose";
-import { asyncHandler } from "../utils/asyncHandler";
 
-export const connectDB = asyncHandler(async (uri) => {
-    const conn = await mongoose.connect(uri);
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
-});
+export const connectDB = async (uri) => {
+    try {
+        const conn = await mongoose.connect(uri);
+        console.log(`MongoDB Connected: ${conn.connection.host}`);
+    } catch (error) {
+        console.error("MongoDB connection error:", error);
+        process.exit(1);
+    }
+};
