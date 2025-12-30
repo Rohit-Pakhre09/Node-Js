@@ -97,4 +97,15 @@ const deleteBlog = asyncHandler(async (req, res) => {
     });
 });
 
-export { createBlog, getAllBlogs, getUserBlogs, updateBlog, deleteBlog };
+const getBlogById = asyncHandler(async (req, res) => {
+    const { blogId } = req.params;
+    const blog = await Blog.findById(blogId).populate("author", "name email");
+
+    if (!blog) {
+        return res.status(404).json({ message: "Blog not found" });
+    }
+
+    return res.status(200).json({ blog });
+});
+
+export { createBlog, getAllBlogs, getUserBlogs, updateBlog, deleteBlog, getBlogById };

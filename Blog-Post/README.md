@@ -1,12 +1,15 @@
-# Blog Post API
+# BlogSpace: Full-Stack Blogging Platform
 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 
-A robust and scalable RESTful API for a blogging platform. This backend service manages user authentication, blog posts, and media uploads, serving as a solid foundation for any frontend blog application.
+BlogSpace is a modern, full-stack blogging application featuring a secure RESTful API backend and a responsive, dynamic React frontend. It provides a complete platform for users to create, manage, and share their stories.
 
 ## 📑 Table of Contents
 
@@ -20,35 +23,59 @@ A robust and scalable RESTful API for a blogging platform. This backend service 
 
 ## ✨ Features
 
+### Backend
 - **User Authentication**: Secure registration and login using JWT (Access & Refresh Tokens).
-- **Session Management**: Automatic token refreshment and secure cookie handling.
-- **Blog Management**: CRUD operations for blog posts.
-- **Media Uploads**: Image upload integration with Cloudinary using Multer.
-- **Security**: Protected routes, CORS configuration, and password hashing.
-- **Scalability**: Modular code structure with separate controllers, routes, and middlewares.
+- **Session Management**: Automatic token refreshment and secure `httpOnly` cookie handling.
+- **Blog Management**: Full CRUD operations for blog posts.
+- **Media Uploads**: Seamless image upload integration with Cloudinary using Multer.
+- **Security**: Protected routes, CORS configuration, and password hashing with bcrypt.
+
+### Frontend
+- **Dynamic UI**: A fully responsive and modern user interface built with React and Tailwind CSS.
+- **Client-Side Routing**: Smooth navigation between pages using React Router.
+- **State Management**: Global user authentication state managed with React Context.
+- **User Dashboard**: A dedicated dashboard for users to view, edit, and delete their own blog posts.
+- **Rich Forms**: User-friendly forms for creating and editing blogs, including file uploads and category selection.
+- **Confirmation Modals**: Enhanced user experience with custom modals for critical actions like post deletion.
 
 ## ⚙️ Tech Stack
 
-- **Runtime Environment**: Node.js
-- **Web Framework**: Express.js
-- **Database**: MongoDB (with Mongoose ODM)
-- **Authentication**: JSON Web Tokens (JWT)
-- **File Storage**: Cloudinary
-- **Middleware**: Multer (File handling), CORS, Cookie-Parser
+| Area | Technology |
+| :--- | :--- |
+| **Frontend** | React, Vite, React Router, Axios, Tailwind CSS, Lucide Icons |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB (with Mongoose ODM) |
+| **Authentication** | JSON Web Tokens (JWT), bcrypt |
+| **File Storage** | Cloudinary |
+| **Middleware** | Multer, CORS, Cookie-Parser |
 
 ## 📂 Folder Structure
 
 ```
 Blog-Post/
-├── src/
-│   ├── controllers/    # Request handlers (User, Blog)
-│   ├── middlewares/    # Auth, Upload, Error handling
-│   ├── models/         # Mongoose schemas
-│   ├── routes/         # API route definitions
-│   └── utils/          # Helper functions (AsyncHandler, Tokens)
-├── index.js            # Entry point
-├── .env                # Environment variables
-└── package.json        # Dependencies
+├── backend/                    # Backend application (Node.js/Express)
+│   ├── src/
+│   │   ├── controllers/        # Request handlers (User, Blog)
+│   │   ├── middlewares/        # Auth, Upload, Error handling
+│   │   ├── models/             # Mongoose schemas
+│   │   ├── routes/             # API route definitions
+│   │   └── utils/              # Helper functions (AsyncHandler, Tokens)
+│   ├── index.js                # Backend entry point
+│   ├── package.json            # Backend dependencies
+│   └── .env                    # Backend environment variables
+├── frontend/                   # Frontend application (React/Vite)
+│   ├── src/
+│   │   ├── components/         # Reusable UI components
+│   │   ├── pages/              # Page components
+│   │   ├── context/            # React Context for state management
+│   │   ├── hooks/              # Custom React hooks
+│   │   ├── api/                # API configuration and constants
+│   │   └── assets/             # Static assets
+│   ├── public/                 # Public assets
+│   ├── index.html              # Main HTML file
+│   ├── package.json            # Frontend dependencies
+│   └── vite.config.js          # Vite configuration
+└── README.md                   # Project documentation
 ```
 
 ## 🚀 Getting Started
@@ -68,19 +95,29 @@ Ensure you have the following installed:
     cd Blog-Post
     ```
 
-2.  **Install dependencies**
+2.  **Backend Setup**
     ```bash
+    cd backend
+    npm install
+    ```
+    Create a `.env` file in the `backend/` directory with the required environment variables (see below).
+
+3.  **Frontend Setup**
+    ```bash
+    cd ../frontend
     npm install
     ```
 
-3.  **Set up Environment Variables**
-    Create a `.env` file in the root directory (see below).
-
-4.  **Run the Server**
-    ```bash
-    # Start the server
-    npm start
-    ```
+4.  **Run the Applications**
+    - **Backend**: In the `backend/` directory, start the server:
+      ```bash
+      npm start
+      ```
+    - **Frontend**: In the `frontend/` directory, start the development server:
+      ```bash
+      npm run dev
+      ```
+      The frontend will typically run on `http://localhost:5173` (default Vite port), and the backend on `http://localhost:8000` (as configured).
 
 ## 🔐 Environment Variables
 

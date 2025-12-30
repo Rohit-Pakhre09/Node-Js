@@ -16,6 +16,7 @@ const blogModel = new mongoose.Schema({
     category: {
         type: String,
         required: true,
+        enum: ["Technology", "Lifestyle", "Travel", "Food", "Health", "Business", "Entertainment", "Sports", "Other"],
     },
     author: {
         type: mongoose.Schema.Types.ObjectId,

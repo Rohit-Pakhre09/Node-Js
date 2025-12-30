@@ -1,6 +1,6 @@
 import { v2 as cloudinary } from 'cloudinary';
-import { asyncHandler } from '../utils/asyncHandler.utils.js';
 import multer from 'multer';
+import { asyncHandler } from '../utils/asyncHandler.utils.js';
 
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
