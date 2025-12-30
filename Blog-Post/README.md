@@ -11,6 +11,12 @@
 
 BlogSpace is a modern, full-stack blogging application featuring a secure RESTful API backend and a responsive, dynamic React frontend. It provides a complete platform for users to create, manage, and share their stories.
 
+# 📸 Sneak Peak
+![Blog-Post](/frontend//src/assets/blog-space.png)
+
+# 📹 App Showcase Video
+![Blog-Post](/frontend//src/assets/Blog-Space.gif)
+
 ## 📑 Table of Contents
 
 - [Features](#-features)
