@@ -1,4 +1,4 @@
-# Node.js Authentication Boilerplate
+# Node.js Authentication
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
@@ -6,6 +6,9 @@
 ![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
 A robust and secure authentication boilerplate for Node.js applications. This project provides a solid foundation for building applications that require user authentication and authorization. It includes features like JWT-based authentication, password hashing, and a clean project structure.
+
+# 📹 Sneak Peak
+![App Video](./src/assets/Auth.gif)
 
 ## 🚀 Features
 
