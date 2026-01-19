@@ -87,17 +87,17 @@ const Dashboard = () => {
             {blogs.map((blog) => (
               <div key={blog._id} className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200">
                 <div className="aspect-video w-full overflow-hidden bg-gray-100 relative">
-                   {blog.image ? (
+                  {blog.image ? (
                     <img
                       src={blog.image}
                       alt={blog.title}
                       className="w-full h-full object-cover"
                     />
-                   ) : (
+                  ) : (
                     <div className="w-full h-full flex items-center justify-center text-gray-400">
-                        <FileText size={48} />
+                      <FileText size={48} />
                     </div>
-                   )}
+                  )}
                 </div>
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-2">
@@ -112,20 +112,20 @@ const Dashboard = () => {
                     {blog.description}
                   </p>
                   <div className="flex justify-end items-center gap-3 pt-4 border-t border-gray-100">
-                      <Link
-                        to={`/edit-blog/${blog._id}`}
-                        className="flex items-center gap-1 text-gray-600 hover:text-blue-600 text-sm font-medium transition-colors"
-                      >
-                        <Edit2 size={16} />
-                        Edit
-                      </Link>
-                      <button
-                        onClick={() => openDeleteModal(blog._id)}
-                        className="flex items-center gap-1 text-gray-600 hover:text-red-600 text-sm font-medium transition-colors cursor-pointer"
-                      >
-                        <Trash2 size={16} />
-                        Delete
-                      </button>
+                    <Link
+                      to={`/edit-blog/${blog._id}`}
+                      className="flex items-center gap-1 text-gray-600 hover:text-blue-600 text-sm font-medium transition-colors"
+                    >
+                      <Edit2 size={16} />
+                      Edit
+                    </Link>
+                    <button
+                      onClick={() => openDeleteModal(blog._id)}
+                      className="flex items-center gap-1 text-gray-600 hover:text-red-600 text-sm font-medium transition-colors cursor-pointer"
+                    >
+                      <Trash2 size={16} />
+                      Delete
+                    </button>
                   </div>
                 </div>
               </div>

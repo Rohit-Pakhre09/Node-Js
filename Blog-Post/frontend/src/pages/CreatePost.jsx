@@ -11,7 +11,7 @@ const CreatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${API_URL}/api/blogs`, 
+      await axios.post(`${API_URL}/api/blogs`,
         { title, content },
         { withCredentials: true }
       );
